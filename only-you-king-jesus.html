@@ -41,9 +41,16 @@
 
   <div class="player">
     <div class="ptitle">Listen here</div>
-    <audio controls preload="none" src="assets/only-you-king-jesus.mp3"></audio>
+    <audio id="player" controls preload="none" src="assets/only-you-king-jesus.mp3"></audio>
   </div>
 </section>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  (function(){
+    var a=document.getElementById('player'); var fired=false;
+    if(a){a.addEventListener('play',function(){ if(!fired){ window.va('event',{name:'Listen: Only You, King Jesus'}); fired=true; } });}
+  })();
+</script>
 
 <div class="wrap">
   <div class="lyrics">
@@ -99,5 +106,6 @@
   <div><a href="index.html">Living Words Music</a></div>
   <div class="creditline">Words &amp; music by James Thompson &middot; &copy; 2026 Living Words Music</div>
 </footer>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
