@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walk With Me · Living Words Music</title>
+<meta name="description" content="Walk With Me, a worship song by Living Words Music. Lyrics, chords, and streaming links.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="index.html">
+      <img src="assets/symbol.png" alt="Living Words Music">
+      <span class="name">Living Words Music</span>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#songs" class="active">Songs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="song-hero">
+  <img src="assets/cover-walk-with-me.png" alt="Walk With Me cover">
+  <h1>Walk With Me</h1>
+  <p class="sub">For the long walk with doubt, when you keep going.</p>
+
+  <div class="actions">
+    <!-- Replace href="#" with the live Spotify / Apple URLs once the release is live -->
+    <a class="btn filled" href="#" target="_blank" rel="noopener">Listen on Spotify</a>
+    <a class="btn" href="#" target="_blank" rel="noopener">Listen on Apple Music</a>
+    <a class="btn" href="assets/walk-with-me-chords.pdf" target="_blank" rel="noopener">Download chords (PDF)</a>
+  </div>
+
+  <div class="player">
+    <div class="ptitle">Listen here</div>
+    <audio id="player" controls preload="none" src="assets/walk-with-me.mp3"></audio>
+  </div>
+</section>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  (function(){
+    var a=document.getElementById('player'); var fired=false;
+    if(a){a.addEventListener('play',function(){ if(!fired){ window.va('event',{name:'Listen: Walk With Me'}); fired=true; } });}
+  })();
+</script>
+
+<div class="wrap">
+  <div class="lyrics">
+    <h2>Lyrics</h2>
+    <div class="lr"></div>
+
+    <div class="stanza">
+      <div class="label">Verse 1</div>
+      <div class="line">Here I am, Lord</div>
+      <div class="line">The same broken mess</div>
+      <div class="line">Where will I go?</div>
+      <div class="line">What would You have me do?</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Pre-Chorus</div>
+      <div class="line">You've promised You'll be with me</div>
+      <div class="line">That You'll go before me</div>
+      <div class="line">But all I feel is doubt, Lord</div>
+      <div class="line">And my footsteps fall</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Chorus</div>
+      <div class="line">You never promised easy</div>
+      <div class="line">You promised You'd be near</div>
+      <div class="line">So I'll walk on through the valley</div>
+      <div class="line">I'll walk on through the fear</div>
+      <div class="line">I counted up the cost, Lord</div>
+      <div class="line">But I never counted this</div>
+      <div class="line">So walk with me</div>
+      <div class="line">Walk with me</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Verse 2</div>
+      <div class="line">Some nights the doubt is louder</div>
+      <div class="line">Than any prayer I know</div>
+      <div class="line">But the promise buried in me</div>
+      <div class="line">Will not let me go</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Verse 3</div>
+      <div class="line">I have prayed to the silence</div>
+      <div class="line">I have promised and failed</div>
+      <div class="line">I have gone weeks not believing</div>
+      <div class="line">And still I hope</div>
+      <div class="line">And still I hope</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Bridge</div>
+      <div class="line">I don't know how this ends, Lord</div>
+      <div class="line">I can't see the road ahead</div>
+      <div class="line">But still You walk beside me</div>
+      <div class="line">And You are enough</div>
+      <div class="line">You are enough</div>
+      <div class="line">You are... enough</div>
+    </div>
+
+    <div class="stanza">
+      <div class="label">Outro</div>
+      <div class="line">So walk with me</div>
+      <div class="line">Walk with me</div>
+      <div class="line">Walk with me...</div>
+    </div>
+  </div>
+</div>
+
+<footer class="site">
+  <img class="fmark" src="assets/symbol.png" alt="">
+  <div><a href="index.html">Living Words Music</a></div>
+  <div class="creditline">Words &amp; music by James Thompson &middot; &copy; 2026 Living Words Music</div>
+</footer>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
