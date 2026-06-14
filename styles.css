@@ -75,16 +75,18 @@ section{padding:64px 0}
 .song-card{
   display:block;background:rgba(0,0,0,0.12);
   border:1px solid var(--frame);border-radius:10px;overflow:hidden;
-  transition:transform .25s, border-color .25s;
+  transition:transform .25s, border-color .25s, background-color .25s;
 }
-.song-card:hover{transform:translateY(-4px);border-color:var(--gold-light)}
+.song-card:hover{transform:translateY(-4px);border-color:var(--gold-light);background:var(--gold)}
 .song-card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
-.song-card .meta{padding:20px 22px}
+.song-card .meta{padding:20px 22px;transition:color .25s}
 .song-card .meta h3{
   font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;
-  color:var(--parch);letter-spacing:.5px;
+  color:var(--parch);letter-spacing:.5px;transition:color .25s;
 }
-.song-card .meta p{color:var(--parch-dim);font-size:17px;margin-top:4px}
+.song-card .meta p{color:var(--parch-dim);font-size:17px;margin-top:4px;transition:color .25s}
+.song-card:hover .meta h3{color:var(--green-deep)}
+.song-card:hover .meta p{color:var(--green-deep)}
 
 /* ---- song detail ---- */
 .song-hero{text-align:center;padding:70px 28px 30px}
