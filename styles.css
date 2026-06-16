@@ -44,14 +44,14 @@ section{padding:64px 0}
 /* song cards (green jewels on parchment) */
 .songs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:34px}
 .song-card{display:flex;flex-direction:column;background:var(--parch-soft);border:1px solid var(--frame);border-radius:10px;overflow:hidden;box-shadow:0 2px 14px rgba(20,40,25,0.08);transition:transform .25s,border-color .25s,box-shadow .25s;}
-.song-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 8px 26px rgba(20,40,25,0.16)}
+.song-card:hover{transform:translateY(-4px);border-color:var(--green);box-shadow:0 8px 26px rgba(20,40,25,0.16)}
 .song-card img{width:100%;display:block;aspect-ratio:1/1;object-fit:cover}
 .song-card .meta{padding:20px 22px;background:var(--parch-soft);flex:1;transition:background .25s}
 .song-card .meta h3{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:26px;color:var(--green);letter-spacing:.5px;transition:color .25s;}
 .song-card .meta p{color:var(--parch-dim);font-size:17px;margin-top:4px;transition:color .25s}
 .song-card:hover .meta{background:var(--gold)}
-.song-card:hover .meta h3{color:var(--green-deep)}
-.song-card:hover .meta p{color:var(--green-deep)}
+.song-card:hover .meta h3{color:#fff}
+.song-card:hover .meta p{color:#FBF7EE}
 
 /* song detail */
 .song-hero{text-align:center;padding:70px 28px 30px}
@@ -95,8 +95,8 @@ footer.site a:hover{color:var(--gold-light)}
 .season .body{flex:1}
 .season .stage{font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
 .season h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;margin:4px 0 8px}
-.season h2 a{color:var(--green)}
-.season h2 a:hover{color:var(--gold)}
+.season h2 a{color:var(--green);border-bottom:2px solid var(--gold);padding-bottom:2px;transition:color .2s,border-color .2s}
+.season h2 a:hover{color:var(--gold);border-color:var(--green)}
 .season .desc{color:var(--ink);font-size:18px;line-height:1.65;margin-bottom:12px}
 .season .scripture{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--gold);line-height:1.5}
 .season .scripture .ref{font-style:normal;font-size:13px;letter-spacing:2px;color:var(--gold-light);text-transform:uppercase;margin-left:6px}
