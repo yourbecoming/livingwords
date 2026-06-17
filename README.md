@@ -1,50 +1,21 @@
-# Living Words Music — website
+# By Your Blood — site update
 
-A static site (plain HTML + CSS). No build step, no framework. Deploys to Vercel in minutes.
+Drop these into your existing `living-words-site` folder, replacing where noted.
 
-## Files
-```
-index.html                     Home
-only-you-king-jesus.html       Song page
-find-me-here.html              Song page
-about.html                     About / bio
-styles.css                     Shared styles (Living Words identity)
-assets/
-  symbol.svg                   Logo mark (used as favicon + in header/footer)
-  avatar.svg                   Full avatar (spare, if needed)
-  cover-only-you.png           Cover art
-  cover-find-me-here.png       Cover art
-  only-you-king-jesus-chords.pdf
-  find-me-here-chords.pdf
-```
+## New file
+- `by-your-blood.html` — the song page (cover, chords download, on-page audio player, full lyrics).
 
-## Deploy to Vercel (using your existing account)
+## Replace existing files
+- `index.html` — adds a sixth song card ("By Your Blood — A song of confession") to the home grid.
+- `seasons.html` — adds By Your Blood as **The Still Centre**, a distinct block after the five seasons and before the Romans 8 close. It is deliberately NOT a sixth numbered season, per your framing of it as the ground the soul returns to.
+- `styles.css` — adds one new block, `.still-centre`, for that Seasons feature. Everything else is unchanged.
 
-**Option A — drag & drop (fastest)**
-1. Go to vercel.com → Add New → Project.
-2. If it asks for a Git repo, choose "Deploy without Git" / use the Vercel CLI, OR put this folder in a new GitHub repo and import it.
-3. Easiest no-Git route: install the CLI once (`npm i -g vercel`), then from inside this folder run `vercel` and follow the prompts. Run `vercel --prod` to publish.
-
-**Option B — GitHub (recommended for easy future edits)**
-1. Create a new GitHub repo, upload these files.
-2. In Vercel → Add New → Project → import that repo.
-3. Framework preset: **Other** (it's static). Build command: none. Output directory: leave as root (`.`).
-4. Deploy.
-
-## Connect your domain (livingwordsmusic.org)
-1. In the Vercel project → Settings → Domains → add `livingwordsmusic.org` (and `www.livingwordsmusic.org`).
-2. Vercel shows you the DNS records to set. At your domain registrar, add those records (usually an A record + a CNAME for www, or Vercel's nameservers).
-3. HTTPS is automatic once DNS propagates (minutes to a couple of hours).
-
-## Before you publish — two edits
-1. **Streaming links.** In `only-you-king-jesus.html` and `find-me-here.html`, find the lines marked
-   `<!-- Replace href="#" ... -->` and paste the live Spotify and Apple Music URLs once the releases are live.
-   Until then the buttons sit harmlessly on `#`.
-2. **CCLI number** (optional, later). Once registered, you can add the CCLI number near the chord download on each song page.
-
-## Adding a future song
-Copy `find-me-here.html` to a new file (e.g. `walk-with-me.html`), swap the title, cover image, lyrics, and chord PDF, then add a matching `<a class="song-card">` block to the Songs grid in `index.html`. That's it.
+## Add to your `assets/` folder
+- `assets/cover-by-your-blood.png` — web cover (1400×1400; the 3000×3000 store master is separate).
+- `assets/by-your-blood.mp3` — audio for the on-page player.
+- `assets/by-your-blood-chords.pdf` — chord chart (see note below).
 
 ## Notes
-- Fonts (Cormorant Garamond, EB Garamond) load from Google Fonts, so the real typeface renders everywhere — no font issues.
-- The whole identity (green, gold, mark) lives in `styles.css`; change a colour once there and it updates site-wide.
+- **No streaming buttons yet.** By Your Blood isn't live on Spotify/Apple (still in review with Symphonic), so the page launches with chords + audio only. There's an HTML comment in `by-your-blood.html` marking where the Spotify/Apple buttons go; add them once the release is live, matching the pattern in `find-me-here.html`.
+- **Chord chart.** The PDF supplied is a raw Moises.ai export — it carries the Moises logo and a flat chord stream, and does NOT match your house-style charts (parchment, deep-green Cormorant heading, gold mono chords, James Thompson / Living Words Music footer). I've wired it in so the link works, but for consistency with the other five it should be rebuilt in the house style.
+- **Scripture on the Seasons block** is Psalm 51:7 ("Wash me, and I shall be whiter than snow"), chosen to echo the chorus. Swap to 1 John 1:7 if you'd rather name the blood directly.
