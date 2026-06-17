@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://livingwordsmusic.org/sitemap.xml
+Sitemap: https://www.livingwordsmusic.org/sitemap.xml
