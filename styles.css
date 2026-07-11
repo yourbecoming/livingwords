@@ -128,3 +128,5 @@ footer.site a:hover{color:var(--gold-light)}
   .lyrics{padding:32px 26px}
   .season,.season:nth-child(even){flex-direction:column;text-align:center;gap:16px}
 }
+
+.group-space{margin-top:70px;}
